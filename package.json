@@ -1,5 +1,5 @@
 {
-  "name": "leksjon8-sse-experiment",
+  "name": "express-sse-experiment",
   "version": "0.1.0",
   "description": "Experiment with SSE functionality",
   "main": "src/client/index.html",
