@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    div {
+      min-height: 40px;
+      margin: 4px;
+      border: 1px dashed red;
+      background-color: lightgray;
+    }
+  </style>
+</head>
+<script>
+    var es = new EventSource("http://127.0.0.1:8080/stream");
+    es.onmessage = function (event) {
+      console.log(event.data);
+      const now = new Date().toString();
+      const newDiv = document.createElement("div");
+      const text = document.createTextNode(now + ': ' + event.data);
+      newDiv.appendChild(text);
+      document.body.appendChild(newDiv);
+    };
+  </script>
+
+<body>
+  
+</body>
+
+</html>

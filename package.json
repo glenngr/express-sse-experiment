@@ -1,0 +1,23 @@
+{
+  "name": "leksjon8-sse-experiment",
+  "version": "0.1.0",
+  "description": "Experiment with SSE functionality",
+  "main": "src/client/index.html",
+  "scripts": {
+    "server": "node src/server/server.js",
+    "serve-client": "http-server -a 127.0.0.1 -p 88 -o --cors ./src/client",
+    "start": "concurrently \"npm run server\" \"npm run serve-client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express-sse": "^0.4.1",
+    "sse": "0.0.6",
+    "cors": "^2.8.1",
+    "express": "^4.14.1"
+  },
+  "devDependencies": {
+    "concurrently": "^3.1.0",
+    "http-server": "^0.9.0"
+  }
+}
