@@ -4,7 +4,7 @@ Experiment using express with sse plugin and a javascript client
 ## Getting started
 Follow these steps to run the experiment:
 
-* Clone this git repoitory to a local directory or download a zip fil with the repository contents
+* Clone this git repository to a local directory or download and extract the zip file with the repository contents
 * Run `npm install` from the local directory
 * When the previous step has completed, run `npm start`
 
