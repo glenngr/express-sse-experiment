@@ -2,6 +2,10 @@
   "name": "express-sse-experiment",
   "version": "0.1.0",
   "description": "Experiment with SSE functionality",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/glenngr/express-sse-experiment.git"
+  },
   "main": "src/client/index.html",
   "scripts": {
     "server": "node src/server/server.js",
