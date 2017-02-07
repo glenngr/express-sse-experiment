@@ -10,3 +10,6 @@ Follow these steps to run the experiment:
 
 The server listens on 127.0.0.1:8080, the client listens on 127.0.0.1:88.
 A browser should automatically open the client on port 88
+
+## What should happen?
+The browser opening the client should show a welcome message, then every fifth second a message altering between "Ping" and "Pong" should be displayed
